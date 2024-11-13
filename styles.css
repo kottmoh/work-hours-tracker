@@ -1,20 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4783c748-dd18-4feb-a026-83acd7f6e6a9/deu1xbs-4437d797-cbe5-4e98-a3e1-276d3c48c2d6.png/v1/fill/w_1192,h_670,q_70,strp/the_ultimate_crossover_by_thatsmashguy_deu1xbs-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc1IiwicGF0aCI6IlwvZlwvNDc4M2M3NDgtZGQxOC00ZmViLWEwMjYtODNhY2Q3ZjZlNmE5XC9kZXUxeGJzLTQ0MzdkNzk3LWNiZTUtNGU5OC1hM2UxLTI3NmQzYzQ4YzJkNi5wbmciLCJ3aWR0aCI6Ijw9MTIwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.w5s1eV4Untcg3WEZ30hC6R_Pxt220qsv6W960UspfAo'); /* Replace with your image URL or local path */
+    background-size: cover; /* Make the image cover the whole background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: white; /* Optional: Change text color for better readability */
 }
 
 .container {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Add transparency to make background visible */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
+    max-height: 80vh; /* Limit container height to 80% of the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
 }
 
 label {
@@ -47,4 +54,9 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 18px;
+    max-height: 200px; /* Set a fixed height for the result area */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
